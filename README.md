@@ -107,7 +107,7 @@ Sistema carrega os dados do banco ao iniciar
 
 Arquivo incluído no repositório:
 
-📄 diagram-uml.png
+📄 ClasseUML.png
 
 Contém as classes:
 
