@@ -28,22 +28,35 @@ Organização das classes seguindo um modelo orientado a objetos
 🏛 Estrutura Geral do Sistema
 
 O projeto segue uma estrutura dividida em camadas:
-/src
- ├── model
- │    ├── EntidadeBase.java
- │    ├── User.java
- │    ├── Evento.java
- │    └── Participacao.java
- ├── repository
- │    ├── UserRepository.java
- │    ├── EventoRepository.java
- │    └── ParticipacaoRepository.java
- ├── service
- │    └── SistemaEventos.java
- ├── view
- │    └── Menu.java
 
- Funcionalidades Implementadas
+/src
+
+model
+
+- EntidadeBase.java
+- User.java
+- Evento.java
+- Participacao.java
+
+repository
+
+- UserRepository.java
+
+- EventoRepository.java
+
+- ParticipacaoRepository.java
+
+service
+
+- SistemaEventos.java
+
+view
+
+- Menu.java
+
+
+Funcionalidades Implementadas
+ 
 ✔ Cadastro de Usuário
 
 Nome
