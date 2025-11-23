@@ -6,7 +6,7 @@ import model.User;
 import repository.EventoRepository;
 import repository.ParticipacaoRepository;
 import repository.UserRepository;
-
+import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -138,8 +138,10 @@ public class SistemaEventos {
             if (e != null) {
                 System.out.println("Evento: " + e.getNome());
                 System.out.println("Categoria: " + e.getCategoria());
-                System.out.println("Data/Hora: " + e.getHorario());
-                System.out.println("Confirmado em: " + p.getDataConfirmacao());
+                DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+                System.out.println("Data/Hora: " + e.getHorario().format(fmt));
+                DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+                System.out.println("Confirmado em: " + p.getDataConfirmacao().format(fmt2));
                 System.out.println("------------------------------------");
             }
         }
